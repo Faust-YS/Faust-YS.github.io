@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 	<head>
@@ -217,3 +218,224 @@
 
 
 
+=======
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<style></style>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+	</head>
+	<body bgcolor = "#6A8372">
+		<center>
+		<table>
+			<tr>
+  			    <td>
+				    <table id="menu">
+					  <tr><td><input type="button" value="Back to Home" onclick="location.href='../../index.htm'"
+					   style="width:160px;height:40px;font-size:15px;color:#FFFFFF;background-color:#24936E"></td></tr>
+					   
+					  <tr><td><br><input type="button" value="Start" id="go" 
+					    style="width:160px;height:40px;font-size:20px;color:#227D51;background-color:#A8D8B9"></td></tr>
+
+					  <tr><td><b><p style="width:160px;height:30px;font-size:20px;color:#A8D8B9"><br>Click</p></b></td></tr>
+					  <tr><td><input type="text" value="0" id="score" ></td></tr>
+					  
+					  <tr><td><b><p style="width:160px;height:30px;font-size:20px;color:#A8D8B9"><br>Time</p></b></td></tr>
+					  <tr><td><input type="text" value="0" id="time" ></td></tr>
+					  
+					  <tr><td><br><input type="button" value="_" id="stop" onClick="myTimer()"
+					    style="width:160px;height:40px;font-size:20px;color:#227D51;background-color:#A8D8B9"></td></tr>
+						
+					  <tr><td><b><p style="width:160px;height:30px;font-size:20px;color:#FBE251" id="end"></b></p></td></tr>
+			          
+				    </table>
+			    </td>
+			    <td> 		
+					<table id="board">
+						<tr>
+							<td><img src="https://i.imgur.com/rePbOsO.png"></td>
+							<td><img src="https://i.imgur.com/rePbOsO.png"></td>
+							<td><img src="https://i.imgur.com/rePbOsO.png"></td>
+							<td><img src="https://i.imgur.com/rePbOsO.png"></td>
+						</tr>
+						<tr>
+							<td><img src="https://i.imgur.com/rePbOsO.png"></td>
+							<td><img src="https://i.imgur.com/rePbOsO.png"></td>
+							<td><img src="https://i.imgur.com/rePbOsO.png"></td>
+							<td><img src="https://i.imgur.com/rePbOsO.png"></td>
+						</tr>
+						<tr>
+							<td><img src="https://i.imgur.com/rePbOsO.png"></td>
+							<td><img src="https://i.imgur.com/rePbOsO.png"></td>
+							<td><img src="https://i.imgur.com/rePbOsO.png"></td>
+							<td><img src="https://i.imgur.com/rePbOsO.png"></td>
+						</tr>
+						<tr>
+							<td><img src="https://i.imgur.com/rePbOsO.png"></td>
+							<td><img src="https://i.imgur.com/rePbOsO.png"></td>
+							<td><img src="https://i.imgur.com/rePbOsO.png"></td>
+							<td><img src="https://i.imgur.com/rePbOsO.png"></td>
+						</tr>
+					</table>
+				</td>
+				
+		    </tr>
+		</table>
+			
+		</center>
+
+		<script>
+
+			var board = document.getElementById("board");
+			var meun = document.getElementById("meun");
+			var score = document.getElementById("score");
+			//var timeC = document.getElementById("time");
+			var stop = document.getElementById("stop");
+			var start = false;
+			var cnt = new Array(16);
+			var isShown = new Array(16);
+			var round = 0;
+			var openedInThisRound = new Array(2);
+			var deck = new Array(8);
+			var counter = 0;
+			var found = 0;
+		
+			var card_addr =[
+			"<img src =\"https://i.imgur.com/rePbOsO.png\">",//0
+			"<img src =\"https://i.imgur.com/h7gKH0F.png\">", //1
+			"<img src =\"https://i.imgur.com/CAQTrBR.png\">", //2
+			"<img src =\"https://i.imgur.com/TY18wjt.png\">", //3
+			"<img src =\"https://i.imgur.com/wD7kkaU.png\">", //4
+			"<img src =\"https://i.imgur.com/cxr57Em.png\">", //5
+			"<img src =\"https://i.imgur.com/k0WTVzv.png\">", //6
+			"<img src =\"https://i.imgur.com/ctPRFBU.png\">", //7
+			"<img src =\"https://i.imgur.com/W34iRTg.png\">", ];//8
+
+			///shuffle
+			function shuffle(){
+				
+				for( var i=0;i<8;i++){
+					 deck[i]=0;
+				}
+				for (var i=0;i<16;i++) {
+				
+					cnt[i] = Math.floor( Math.random() * 8 ) + 1 ; 
+					//Math.floor(Math.random() * (max - min + 1)) + min
+					
+					while( deck[cnt[i]-1] == 2 ){
+						cnt[i] = Math.floor( Math.random() * 8) + 1 ;
+					}
+					deck[cnt[i]-1]+=1;
+					
+					//cnt[i] = i % 8 + 1;// cnt= 位置(0~15) ; 牌面(1~8)
+					isShown[i] = false;// 可視
+					
+					row = Math.floor(i/4);
+					col = i % 4;
+					board.rows[row].cells[col].innerHTML = card_addr[0];
+					board.rows[row].cells[col].onclick = boardClick;
+					board.rows[row].cells[col].idx = i; // idx = 位置編號(0~15)
+				}
+			}
+			document.getElementById("go").onclick = function(){
+			        document.getElementById("go").value = "Restart";
+					document.getElementById("time").value = 0;
+					shuffle();
+					round = 0;
+					counter = 0;
+					found = 0;
+					document.getElementById("score").value = 0;
+					document.getElementById("end").innerHTML = " ";
+					start = true;	
+					myTimer();
+								
+			}
+		    
+
+			function boardClick(){
+					idx = this.idx; // idx = 位置編號(0~15)
+					if(start){
+					  
+							if(!isShown[idx]){
+							counter++;
+							score.value = counter;
+								if(round==0){
+								  this.innerHTML = card_addr[cnt[idx]];
+								  isShown[idx] = true;
+								  openedInThisRound[round] = [idx,cnt[idx]];
+								  round++;
+								}
+								else if(round == 1){
+								  start = false;
+								  this.innerHTML= card_addr[cnt[idx]];
+								  isShown[idx] = true;
+								  openedInThisRound[round] = [idx,cnt[idx]];
+								  round++;
+									if (openedInThisRound[0][1] == openedInThisRound[1][1]){
+									   round = 0;
+									   found++;
+									   if(found == 8){
+									     start = false;
+									     myTimer();
+										 document.getElementById("stop").value = "_";
+										 document.getElementById("end").innerHTML = "Congratulation!!";
+									   }
+									   else{
+									     start = true;
+									   }
+									}
+									else{
+									 setTimeout(
+									 "fold(" + openedInThisRound[0][0] + ");" +
+									 "fold(" + openedInThisRound[1][0] + ");" +
+									 "round = 0;",
+									 1000);
+									 start = true;
+									}
+								}
+							}
+						
+					}	
+						
+			}			
+
+			function fold(idx){
+				 row = Math.floor(idx/4);
+				 col = idx%4;
+				 board.rows[row].cells[col].innerHTML =card_addr[0];
+				 isShown[idx] = false;
+			}
+			
+			function timerStart(){
+		        theInput = document.getElementById("time");
+			    theInput.value++;
+			    timer = setTimeout("timerStart()",1000);
+	     	}
+ 
+            function myTimer(){
+		        theButton = document.getElementById("stop");
+		        switch(theButton.value){
+			        case "_": 
+			        case "Continue":
+				        timerStart();
+				        theButton.value = "Pause";
+						start = true;
+				        break;
+						
+			        case "Pause":
+				        clearTimeout(timer);
+				        theButton.value = "Continue";
+						start = false;
+				        break;
+                }
+            }        
+			
+
+		</script>
+	</body>
+</html>
+
+
+
+>>>>>>> 5cb2a8f19a11f20b0db46d941fafef3a42c0c759

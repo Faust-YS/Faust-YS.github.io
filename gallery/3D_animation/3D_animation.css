@@ -1,0 +1,43 @@
+html{
+     background: #d7cebb;
+     font-family:monospace,sans-serif,Microsoft JhengHei;
+     text-align:center;
+}
+body {
+
+    padding-top: 70px;
+    text-align: center;
+}
+.main { 
+  
+    background: #d7cebb;
+    border: 2px solid;
+    border-style: none;
+}
+title_line {
+    border: 1px solid;
+    padding: 30px 30px;
+    border-style: none;
+    font-size: 60px;
+    color: #574031;
+}
+sub_title {
+    border: 1px solid;
+    padding: 30px 30px;
+    border-style: none;
+    font-size: 30px;
+    color: #574031;
+}
+
+p {   
+    width: 600px;
+    border: 2px solid;
+    padding: 10px 5px;
+    border-style: none;
+    font-size: 20px;
+    color: #574031;
+    border-radius: 10px;
+    text-align: left;
+    width:600 px;
+
+}

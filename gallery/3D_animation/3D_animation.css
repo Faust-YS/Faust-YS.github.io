@@ -13,6 +13,7 @@ body {
     background: #d7cebb;
     border: 2px solid;
     border-style: none;
+
 }
 title_line {
     border: 1px solid;
@@ -20,24 +21,44 @@ title_line {
     border-style: none;
     font-size: 60px;
     color: #574031;
+   
+    border-radius: 10px
 }
 sub_title {
     border: 1px solid;
     padding: 30px 30px;
     border-style: none;
-    font-size: 30px;
-    color: #574031;
+    font-size: 40px;
+    color: #574031; 
+ 
 }
 
 p {   
-    width: 600px;
+    width: 560px;
     border: 2px solid;
     padding: 10px 5px;
     border-style: none;
-    font-size: 20px;
+    font-size: 18px;
     color: #574031;
     border-radius: 10px;
     text-align: left;
     width:600 px;
+
+}
+img{
+    width: 560px;
+}
+td {
+    width: 200px;
+}
+a{
+
+    border: 2px solid;
+    padding: 10px 5px;
+    border-style: none;
+    font-size: 18px;
+    color: #574031;
+    border-radius: 10px;
+    text-align: left;
 
 }

@@ -17,6 +17,10 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Playfair Display", Georgia, "Times New Roman", serif/*rtl:Amiri, Georgia, "Times New Roman", serif*/;
 }
 
+li{
+  margin-bottom:10px;
+}
+
 .blog-header-title{
   font-family: 'Roboto', sans-serif;
   font-weight: 600;
@@ -104,7 +108,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .bdg.bdg-info {
- 
+  margin-top:10px;
   background-color: #70ACC2
 }
 
@@ -117,7 +121,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .bdg.bdg-link {
   text-decoration: none !important;
-  font-size: 15px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
   font-weight: 800;
   padding: 6px 6px;
   color: #70ACC2;

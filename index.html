@@ -1,105 +1,457 @@
-
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE html>
 <html>
+  <header>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto&display=swap"
+      rel="stylesheet"
+    /> 
+    <link rel="icon" type="image/x-icon" href="catIcon.ico">
+    <title>Faust's Portfolio</title>
+   
+  </header>
+  <body>
+    <header>
+      <div class="collapse" id="navbarHeader" style="background-color: #70acc2">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-8 col-md-7 py-4">
+              <h4 class="text-white blog-header-title">Hi!  I'm Faust.</h4>
+              <p class="text-white">
+                喜歡遊戲、動畫的菜鳥工程師一枚。<br>
+                雖然本科是工程師，但也喜歡接觸與遊戲、網頁、人機互動領域相關的技術，所以在UI/UX、動畫、平面設計領域也都有所涉獵。<br>
+                <br>
+                希望將來能活用自己的所學所知，為自己所愛的領域貢獻一己之力。
 
-<head>
-    <style>
-        p{border:1px solid; padding: 30px 30px; border-style:none; font-size:30px; color:#ebf6f7;}
-        p2{border:2px solid;  padding:10px 5px; border-style:dash; font-size:24px; color:#87b2b7;  border-radius: 10px; background-color:#ebf6f7;}
-        p3{border:2px ;  padding:10px ; border-style:dash; font-size:18px; color:#ebf6f7;  border-radius: 10px; }
-        
-      #bar{position:relative ;width:100%; }
-         img{margin: 0px;
-            transition: 0.3s ease;
-            }
-         img:hover{
-            margin: 130px;
-            transition: 0.3s ease;
-            transform: scale(10);
-        }       
+              </p>
+            </div>
+            <div class="col-sm-4 offset-md-1 py-4">
+              <h4 class="text-white blog-header-title">Contact</h4>
+              <ul class="list-unstyled text-white">
+                <li>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-envelope-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"
+                    />
+                  </svg>
+                  &nbsp<span class="user-select-all"
+                    >c54513.candy@gmail.com</span
+                  >
+                </li>
+                <li>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-telephone-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"
+                    />
+                  </svg>
+                  &nbsp<span class="user-select-all">0968916513</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="navbar navbar-dark shadow-sm"
+        style="background-color: #70acc2"
+      >
+        <div class="container">
+          <a  class="navbar-brand d-flex align-items-center">
+            <img src="catIcon.png" width="30" height="30"alt=""/>
+            &nbsp<strong>Faust</strong>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarHeader"
+            aria-controls="navbarHeader"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
 
- 
-    </style>
+          >
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#fff" class="bi bi-chevron-double-down" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M1.646 6.646a.5.5 0 0 1 .708 0L8 12.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+            <path fill-rule="evenodd" d="M1.646 2.646a.5.5 0 0 1 .708 0L8 8.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+          </svg>
+          </button>
+        </div>
+      </div>
+    </header>
 
-</head>
+    <main>
+      <section class="py-3 text-center container">
+        <div class="row py-lg-5">
+          <div class="col-lg-6 col-md-8 mx-auto">
+            <h1 class="fw-light">Faust's Portfolio</h1>
+            <p class="lead text-muted">
+              歡迎來到我的作品集網站！<br>
+              這裡展示了一些我過去參與過的專案
+            </p>
+          </div>
+        </div>
+      </section>
 
-<body bgcolor="#87b2b7">
-<table border="0" align="center" cellspacing="0" cellpadding="10" margin="10px">
-    <tr>
-        <td colspan="3"><p><u><b> <span style="font-family:serif;overflow:hidden; ">  　Yu-Shan's　　　　　　　　　　　　　 </span></p></u></b></td>
-    </tr >
-    <tr>
-	    <td><p2 style = "font-family:serif;"><b>　Web Program　</b></p2> </td>
-        <td><p2 style = "font-family:serif;"><b>　About Me　</b></p2></td>
-		<td><p2 style = "font-family:serif;"><b>　　Photo　　</b></p2></td>
-        
-    </tr>
+      <div class="album py-5 bg-light">
+        <div class="container">
+          <!--card 0-->
+          <div class="row mb-2">
+            <!--card 00-->
+            <div class="col-md-6">
+              <div
+                class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
+              >
+                <div class="col p-4 d-flex flex-column position-static">
+                  <p class="categ d-inline-block mb-2">Web DBMS</p>
+                  <h4 class="mb-0">NCCU-Stock-Market</h4>
+                  <p>
+                    <spam class="bdg bdg-info">Node.js</spam>
+                    <spam class="bdg bdg-info">React</spam>
+                    <spam class="bdg bdg-info">Express</spam>
+                  </p>
+                  <!-- <div class="mb-1 text-muted">Nov 12</div> -->
+                  <p class="card-text mb-auto">政大股市交易系統</p>
+                  <spam>
+                    <a
+                      href="https://github.com/ShallyLai/NCCU-Stock-Market"
+                      class="bdg bdg-link outline"
+                      target="_blank"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-github"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+                        />
+                      </svg>
+                      Github
+                    </a>
+                  </spam>
+                </div>
+                <div class="col-auto d-none d-lg-block">
+                  <img
+                    class="bd-placeholder-img"
+                    width="250"
+                    height="250"
+                    src="./project/NCCU_STOCK/NCCU_stock_00.png"
+                    alt="..."
+                  />
+                  <!-- <svg
+                    class="bd-placeholder-img"
+                    width="200"
+                    height="250"
+                    xmlns="./project/01/NCCU_stock_00.png"
+                    role="img"
+                    aria-label="Placeholder: Thumbnail"
+                    preserveAspectRatio="xMidYMid slice"
+                    focusable="false"
+                  >
+                    <title>Placeholder</title>
+                    <rect width="100%" height="100%" fill="#55595c" />
+                    <text x="50%" y="50%" fill="#eceeef" dy=".3em">
+                      Thumbnail
+                    </text>
+                  </svg> -->
+                </div>
+              </div>
+            </div>
+            <!--card 01-->
+            <div class="col-md-6">
+              <div
+                class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
+              >
+                <div class="col p-4 d-flex flex-column position-static">
+                  <p class="categ d-inline-block mb-2">
+                    Web Information visualization
+                  </p>
+                  <h4 class="mb-0">QS World University Rankings</h4>
+                  <p>
+                    <spam class="bdg bdg-info">D3.js</spam>
+                    <spam class="bdg bdg-info">Bootstrap</spam>
+                  </p>
+                  <!-- <div class="mb-1 text-muted">Nov 12</div> -->
+                  <p class="card-text mb-auto">世界大學排名</p>
+                  <!-- <a
+                    href="https://shallylai.github.io/IVFinalProject/"
+                    class="stretched-link"
+                    target="_blank"
+                  >
+                    <spam class="bdg bdg-info">Bootstrap</spam>
+                  </a>
+                  <a
+                    href="https://github.com/ShallyLai/IVFinalProject"
+                    class="stretched-link"
+                    target="_blank"
+                    >
+                    <spam class="bdg bdg-info">D3.js</spam>
+                  </a> -->
 
-    <tr>
-	    <td><p3><ul>
+                  <spam
+                    ><a
+                      href="https://shallylai.github.io/IVFinalProject/"
+                      class="bdg bdg-link outline"
+                      target="_blank"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-play-circle"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"
+                        />
+                        <path
+                          d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"
+                        />
+                      </svg>
+                      Demo
+                    </a>
+                    <a
+                      href="https://github.com/ShallyLai/IVFinalProject"
+                      class="bdg bdg-link outline"
+                      target="_blank"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-github"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+                        />
+                      </svg>
+                      Github
+                    </a>
+                  </spam>
+                </div>
+                <div class="col-auto d-none d-lg-block">
+                  <img
+                    class="bd-placeholder-img"
+                    width="250"
+                    height="250"
+                    src="project\Uni_Rankings\Uni_Rankings_00.png"
+                    alt="..."
+                  />
+                  <!-- <svg
+                    class="bd-placeholder-img"
+                    width="200"
+                    height="250"
+                    xmlns="./project/01/NCCU_stock_00.png"
+                    role="img"
+                    aria-label="Placeholder: Thumbnail"
+                    preserveAspectRatio="xMidYMid slice"
+                    focusable="false"
+                  >
+                    <title>Placeholder</title>
+                    <rect width="100%" height="100%" fill="#55595c" />
+                    <text x="50%" y="50%" fill="#eceeef" dy=".3em">
+                      Thumbnail
+                    </text>
+                  </svg> -->
+                </div>
+              </div>
+            </div>
+          </div>
 
-           <li><a href="./web_apps/card/index.htm">翻牌遊戲</a></li><br>
-           <li><a href="./web_apps/map/index.htm">Leaflet API</a></li><br>
-           <li><a href="https://s10709.000webhostapp.com/HW4.php">計算機</a></li><br>
-           <li><a href="https://s10709.000webhostapp.com/HW6/hw6_index.php">簡易留言板</a></li>
-    
-          </ul></p3>
-		</td>
-        <td><p3><ul>
+          <!--card 1-->
+          <div class="row mb-2">
+            <!--card 10-->
+            <div class="col-md-6">
+              <div
+                class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
+              >
+                <div class="col p-4 d-flex flex-column position-static">
+                  <p class="categ d-inline-block mb-2">UI/UX Design</p>
+                  <h4 class="mb-0">鵝啥技能交換平台</h4>
+                  <p>
+                    <spam class="bdg bdg-info">D3.js</spam>
+                    <spam class="bdg bdg-info">Bootstrap</spam>
+                  </p>
+                  <!-- <div class="mb-1 text-muted">Nov 12</div> -->
+                  <p class="card-text mb-auto">世界大學排名</p>
+                  <!-- <a
+                      href="https://shallylai.github.io/IVFinalProject/"
+                      class="stretched-link"
+                      target="_blank"
+                    >
+                      <spam class="bdg bdg-info">Bootstrap</spam>
+                    </a>
+                    <a
+                      href="https://github.com/ShallyLai/IVFinalProject"
+                      class="stretched-link"
+                      target="_blank"
+                      >
+                      <spam class="bdg bdg-info">D3.js</spam>
+                    </a> -->
 
-           <li>以貓為空氣、以奶茶為血液、以ACG為陽光</li><br>
-           <li>三日不吸貓便覺面目可憎</li><br>
-           <li>定居噗浪的安價旅人</li><br>
-           <li>٩( ᐛ )۶快樂肥宅٩( ᐖ )۶</li><br>
-           <li>ヽ(#`Д´)ﾉ香菜是邪魔歪道!!!!</li>
-    
-         </ul></p3></td>
-		 <td ><img src="https://i.imgur.com/cmVCTIp.jpg"height="300"align="top" style="hover: 
-		    transition-property: height;
-		    margin: 0px;
-            transition: 0.3s ease;
-            transform: scale(1) ;">
-		</td>
-    </tr>
+                  <spam>
+                    <a
+                      href="project\LearnWhat\LearnWhat_Poster.pdf"
+                      class="bdg bdg-link outline"
+                      target="_blank"
+                      >專案介紹
+                    </a>
+                    <a
+                      href="project\LearnWhat\LearnWhat_Personality.pdf"
+                      class="bdg bdg-link outline"
+                      target="_blank"
+                      >品牌個性
+                    </a>
+                    <a
+                      href="https://whimsical.com/hw6-CmUM7Axg99KdAYkcEe8pne"
+                      class="bdg bdg-link outline"
+                      target="_blank"
+                      >Prototype
+                    </a>
+                  </spam>
+                </div>
+                <div class="col-auto d-none d-lg-block">
+                  <img
+                    class="bd-placeholder-img"
+                    width="250"
+                    height="250"
+                    src="project\LearnWhat\LearnWhat_00.png"
+                    alt="..."
+                  />
+                  <!-- <svg
+                      class="bd-placeholder-img"
+                      width="200"
+                      height="250"
+                      xmlns="./project/01/NCCU_stock_00.png"
+                      role="img"
+                      aria-label="Placeholder: Thumbnail"
+                      preserveAspectRatio="xMidYMid slice"
+                      focusable="false"
+                    >
+                      <title>Placeholder</title>
+                      <rect width="100%" height="100%" fill="#55595c" />
+                      <text x="50%" y="50%" fill="#eceeef" dy=".3em">
+                        Thumbnail
+                      </text>
+                    </svg> -->
+                </div>
+              </div>
+            </div>
+            <!--card 11-->
+            <div class="col-md-6">
+              <div
+                class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
+              >
+                <div class="col p-4 d-flex flex-column position-static">
+                  <p class="categ d-inline-block mb-2">UI/UX Design</p>
+                  <h4 class="mb-0">鵝啥技能交換平台</h4>
+                  <p>
+                    <spam class="bdg bdg-info">D3.js</spam>
+                    <spam class="bdg bdg-info">Bootstrap</spam>
+                  </p>
+                  <!-- <div class="mb-1 text-muted">Nov 12</div> -->
+                  <p class="card-text mb-auto">世界大學排名</p>
+                  <!-- <a
+                      href="https://shallylai.github.io/IVFinalProject/"
+                      class="stretched-link"
+                      target="_blank"
+                    >
+                      <spam class="bdg bdg-info">Bootstrap</spam>
+                    </a>
+                    <a
+                      href="https://github.com/ShallyLai/IVFinalProject"
+                      class="stretched-link"
+                      target="_blank"
+                      >
+                      <spam class="bdg bdg-info">D3.js</spam>
+                    </a> -->
 
-    <tr></tr>
-    <tr>
-      <td colspan="3"><p2 style = "font-family:serif;"><b>　IG Anka　</b></p2> </td>
-    </tr>
+                  <spam>
+                    <a
+                      href="project\LearnWhat\LearnWhat_Poster.pdf"
+                      class="bdg bdg-link outline"
+                      target="_blank"
+                      >專案介紹
+                    </a>
+                    <a
+                      href="project\LearnWhat\LearnWhat_Personality.pdf"
+                      class="bdg bdg-link outline"
+                      target="_blank"
+                      >品牌個性
+                    </a>
+                    <a
+                      href="https://whimsical.com/hw6-CmUM7Axg99KdAYkcEe8pne"
+                      class="bdg bdg-link outline"
+                      target="_blank"
+                      >Prototype
+                    </a>
+                  </spam>
+                </div>
+                <div class="col-auto d-none d-lg-block">
+                  <img
+                    class="bd-placeholder-img"
+                    width="250"
+                    height="250"
+                    src="project\LearnWhat\LearnWhat_00.png"
+                    alt="..."
+                  />
+                  <!-- <svg
+                      class="bd-placeholder-img"
+                      width="200"
+                      height="250"
+                      xmlns="./project/01/NCCU_stock_00.png"
+                      role="img"
+                      aria-label="Placeholder: Thumbnail"
+                      preserveAspectRatio="xMidYMid slice"
+                      focusable="false"
+                    >
+                      <title>Placeholder</title>
+                      <rect width="100%" height="100%" fill="#55595c" />
+                      <text x="50%" y="50%" fill="#eceeef" dy=".3em">
+                        Thumbnail
+                      </text>
+                    </svg> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
 
-    <tr>
-      <td colspan="3"> 
-      <br>
-       <div id="bar">
-       <img src="https://i.imgur.com/w7GtIcq.jpg"  height="50">
-       <img src="https://i.imgur.com/fnopqPu.jpg"  height="50">
-       <img src="https://i.imgur.com/BtQNBNE.jpg"  height="50">
-       <img src="https://i.imgur.com/tud1aiX.jpg"  height="50">
-       <img src="https://i.imgur.com/n0iDVoe.jpg"  height="50">
-       <img src="https://i.imgur.com/9wkZ4Yv.jpg"  height="50">
-       <img src="https://i.imgur.com/wCZ6dms.jpg"  height="50">
-       <img src="https://i.imgur.com/BzyATzo.png"  height="50">
-       <img src="https://i.imgur.com/btA0yKI.png"  height="50">
-	   </div>
-       </td>
-    </tr>
-    <tr>
-      <td colspan="3"> 
-	   <div id="bar">
-       <img src="https://i.imgur.com/he1N3Hf.png"  height="50">
-       <img src="https://i.imgur.com/ZbWLUAS.png"  height="50">
-       <img src="https://i.imgur.com/CmpSBt8.png"  height="50">
-       <img src="https://i.imgur.com/dNoI8M6.png"  height="50">
-       <img src="https://i.imgur.com/HLg7nM0.png"  height="50">
-       <img src="https://i.imgur.com/ME2BOp2.png"  height="50">
-       <img src="https://i.imgur.com/gTL0nfb.png"  height="50">
-       <img src="https://i.imgur.com/zSmSIJu.png"  height="50">
-       <img src="https://i.imgur.com/s5eNYkc.png"  height="50">
-       </div>
-      </td>
-    </tr>  
-</table>
-<br><br><br>
- 
-
-</body></html>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

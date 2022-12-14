@@ -38,9 +38,9 @@ li{
   flex: 0 0 auto;
 }
 
-.h-250 { height: 250px; }
+.h-250 { height: 252px; }
 @media (min-width: 768px) {
-  .h-md-250 { height: 250px; }
+  .h-md-250 { height: 252px; }
 }
 
 /* Pagination */
@@ -140,6 +140,15 @@ li{
 
 .categ {
   color: #70ACC2;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 800;
+}
+
+.card-text{
+  font-size: 14px;
+}
+
+.modal-header{
+  background: #70ACC2 !important;
+  color: #fff !important;
 }
